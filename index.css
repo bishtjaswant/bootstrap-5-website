@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;1,400&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+
+}
+
+.navbar_style {
+    background: #fff;
+    box-shadow: 0 10px 30px 0px rgba(138,155,167,0.24);
+}
+.header {
+    background: #fff;
+    box-shadow: 0 10px 30px 0px rgba(138,155,167,0.24);
+}
+.navbar-brand img {
+    width: 83px;
+    height: 65px;
+    margin: 0px;
+    position: absolute;
+    top: -5px;
+    left: 60px;
+} 
+
+ 
+.navbar li a {
+     position: relative;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.navbar li a::before{
+content: '';
+position: absolute;
+width: 0%;
+top: 100%;
+bottom: 54%;
+height: 5%;
+background: #ff7230;
+transition: all 0.2s linear;
+}
+.navbar li a:hover::before{
+    width: 80%;
+}
+
+
+.navbar li .active{
+color: #ff7230 !important;
+}
+
+
+
+
+
+
+
+
+
+/* main section css */
+.main .header-text {
+    color: #8c8c8c;
+    margin-top: 79px;
+    font-size: 22px;
+    text-transform: capitalize
+}
+
+.main .lorem {
+    color: #ff7230;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.main  .title {
+    font-size: 25px;
+    color: #2d3436;
+}  
+.main .sitemap{
+    font-weight: 800;
+    color: #ff7230;
+}
+.main .hire-me-btn, .about-me-btn {
+    height: 50px;
+    width: 120px;
+    background: #ff7230;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.main  .about-me-btn {
+    height: 50px;
+    width: 120px;
+    background: #fff;
+    color: rgb(17, 14, 14);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: 2px solid #ff7230;
+    outline: none;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.main .hire-me-btn:hover{
+    background-color: #fff;
+    color: #ff7230;
+    border: 1px solid #ff7230;
+}
+
+
+.main .about-me-btn:hover{
+    background-color: #ff7230;
+    color: #fff;
+    border: 1px solid #ff7230;
+}
+
+.main .mail {
+    font-size: 21px;
+    margin-top: 19px;
+    color: #000;
+} 
+
+
+/* about section css  / */
+.about .main-title h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: bolder;
+    margin: 20px 0px;
+    text-transform: capitalize;
+}
+
+
+/* .expertise css */
+.expertise .main-title h1 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: bolder;
+    margin: 20px 0px;
+    text-transform: capitalize;
+}
+
+.expertise .main-title p {
+    text-align: center; 
+    font-size: 21px;
+}
+ 
+.expertise-div .progress {
+    border-radius: 400px;
+}
+
+.expertise .expertise-div{
+    margin-top: 90px;
+}
+
+
+
+/* servicee css  */
+.service{
+
+}
+.service .service-box{
+
+    padding: 10px 5px 10px 5px ;
+    box-shadow: 0 10px 30px 0px rgba(138,155,167,0.24);
+    margin-top: 30px;
+    position: relative;
+    color: #fff;
+    background-color: #d32f2f;
+    transition: all 0.4s linear;
+}
+
+
+.service .num{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ffeee6;
+    color: #ff7230;
+    font-size: 54px;
+    margin: auto;
+    text-align: center;
+}
+.service .service-box:hover{
+    box-shadow: 0 10px 30px 0px grey;
+    background-color: #ff3d00;
+}
+
+.service .service-box .service-icon{
+    width: 20px;
+    color: #ff7230;
+    margin-right: 4px;
+    height: 20px;
+}
+
+.service .service-box ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.service .service-box ul li:first{
+    margin-top: 22px;
+}
+
+.service .heart-at-bottom .fa-heart{
+    color: gold;
+    margin-top: 12px;
+    margin-left: 22px;
+    position: absolute;
+    left: 1px;
+    bottom: -1px;;
+}
+.service .service-box ul li{
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+/* hiire me sc */
+.hireme {
+    margin-top: 50px;
+    height: 300px;
+    background-image: linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6) ), url('./img/employees.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+
+}
+.hireme .hire-me-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hire-me-btn{
+
+    height: 50px;
+    width: 120px;
+    background: #ff7230;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    transition: all 0.4s linear;
+    cursor: pointer; 
+    margin-top: 22px;
+}
+.hireme .hire-me-box h2{
+    color: #ff7230;
+    text-transform: capitalize;
+    text-align: center;
+}
+.hireme .hire-me-box p{
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    font-size: 23px;
+}
+
+.hireme .hire-me-box h6{
+    color: #fff;
+text-align: center;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+/* contact us */
+.contact {
+
+    position: relative;
+}
+.contact .contact-img{
+    position: absolute;
+    left: 9%;
+    bottom: -10%;
+    height: 300px;
+    width: 262px;
+}
+@media (max-width:768px){
+    .navbar-collapse ul {
+
+        margin-top: 35px;
+        text-align: center;
+    }
+    .main .float-right {
+        margin-top: 35px
+    }
+    .navbar li a:hover::before{
+        width: 0%;
+    }
+
+    .service .service-box{
+        text-align: center;}
+
+}
